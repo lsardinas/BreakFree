@@ -22,9 +22,7 @@
       url: urlRequest,
       method: "GET"      
     })
-    .done(function(data) {      
-      console.log(data);
-      
+    .done(function(data) {
       searchInput.attr("placeholder", defaultInputText);      
       var li = $(document.createElement('li')).addClass('results_list_item');
       var shortLink, longLink, errorLink;
