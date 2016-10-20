@@ -49,9 +49,8 @@
         $(".results_list").prepend(li);
       }
     })
-    .error(function(xhr, ajaxOptions, thrownError){
-      searchInput.attr("placeholder", defaultInputText)
-      console.log(thrownError);      
+    .error(function(){
+      searchInput.attr("placeholder", defaultInputText)      
       console.log("An error has ocurred, please try again later.");
     })
     
