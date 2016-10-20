@@ -49,7 +49,9 @@
         $(".results_list").prepend(li);
       }
     })
-    .fail(function(){
+    .fail(function(data){
+      console.log(data);
+      
       searchInput.attr("placeholder", defaultInputText)
       console.log("An error has ocurred, please try again later.");
     })
