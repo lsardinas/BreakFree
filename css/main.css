@@ -1,0 +1,168 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {    
+    color: #222;        
+}
+
+body {
+  background: #f5f5f5;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.header {
+  background: #fff;
+  border-bottom: solid 1px #e5e5e5;
+  padding: 40px 20px;
+}
+
+.header_search {
+  display: block;
+  width: 100%;  
+}
+
+.header_search_input {  
+  margin:0;
+  padding: 10px;
+  float:left;  
+  width: 70%;
+  height: 50px;
+}
+.header_search_input-regular {
+  border: solid 1px #d5d5d5;  
+}
+
+.header_search_button {
+  display: inline-block;
+  margin:0;    
+  float:left;  
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 30%;
+  height: 50px;
+  line-height: 50px !important;
+}
+
+.header_search_button--regular {
+  background: #444;
+  color: #f5f5f5;
+  text-transform: uppercase;
+}
+.header_search_button--regular:hover {
+  background: #000;
+}
+
+.results {
+  padding: 40px 20px;
+}
+.results_list {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.results_list_item {
+  margin:0 0 40px 0;
+  
+}
+
+.results_list_item_full {
+  color: #444;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.results_list_item_full:hover {
+  text-decoration: underline;
+}
+
+.results_list_item_shorten {
+  color: #b5b5b5;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.results_list_item_error {
+  color: brown;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
