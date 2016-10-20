@@ -1,4 +1,8 @@
-(function(){  
+(function(){
+  
+  var defaultInputText = "Enter shorten address to expand";
+  var searchingInputText = "Searching ...";
+  
   $(".header_search_input").on("keypress", function(e) {
     var code = e.keyCode || e.which;
     if(code === 13) {
@@ -10,7 +14,7 @@
     var searchInput = $(".header_search_input");
     var shortUrl = searchInput.val().trim();
     searchInput.val('');
-    searchInput.attr("placeholder", "Searching ...");
+    searchInput.attr("placeholder", searchingInputText);
     
     var urlRequest = "http://plottsocialist.azurewebsites.net/api/Plott/Fetch?url=" + shortUrl;
     
@@ -21,7 +25,7 @@
     .done(function(data) {      
       console.log(data);
       
-      searchInput.attr("placeholder", "Enter shorten address to expand");      
+      searchInput.attr("placeholder", defaultInputText);      
       var li = $(document.createElement('li')).addClass('results_list_item');
       var shortLink, longLink, errorLink;
       
@@ -46,6 +50,7 @@
       }
     })
     .fail(function(){
+      searchInput.attr("placeholder", defaultInputText)
       console.log("An error has ocurred, please try again later.");
     })
     
