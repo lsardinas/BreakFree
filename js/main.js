@@ -16,7 +16,7 @@
     searchInput.val('');
     searchInput.attr("placeholder", searchingInputText);
     
-    var urlRequest = "http://plottsocialist.azurewebsites.net/api/Plott/Fetch?url=" + shortUrl;
+    var urlRequest = "//plottsocialist.azurewebsites.net/api/Plott/Fetch?url=" + shortUrl;
     
     $.ajax({
       url: urlRequest,
